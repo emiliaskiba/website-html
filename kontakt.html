@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <script src="funkcje.js"></script>     
+
+  <title>Amai Pots</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container">
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Strona główna
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">O firmie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="koszyk.html">Koszyk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4"><img class="card-img-top" src="pic/banner.jpg" alt="banner"></h1>
+        <div class="list-group">
+           <a href="index.html" class="list-group-item">Wszystkie produkty</a>
+          <a href="misiowe.html" class="list-group-item">Kolekcja "Misiowe"</a>
+          
+          <a href="wyp.html" class="list-group-item">Wyprzedaż</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          
+              
+            </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="d-block img-fluid" src="pic/kontakt.jpg" alt="o firmie"> <br/>
+                
+          
+                <h5>INFOLINIA</h5>
+PN-PT 9:00-17:00<br/>
+
+
+(KOSZT POŁĄCZENIA WG. TARYFY OPERATORA)<br/>
+
+<h5>58 770 92 25</h5>
+
+
+            </div>
+          <div class="col-sm-4">
+              <form action="mailto:emilia.skiba@op.pl" method="post" onsubmit="pokazDane()" >
+
+    <table>
+    
+<!-- formularz-->
+<tbody>
+    <tr>
+        <td> <label>Imię:</label> </td><td> <input type="text" name="imie" id="imie" title = "Imię powinno mieć od 2 do 20 liter" pattern="{2,20}" size= "15" required/>  </td>
+    </tr>
+    <tr>
+        <td> <label>Nazwisko:</label> </td><td> <input type="text" name="nazwisko" id="nazwisko" title = "Nazwisko powinno mieć od 2 do 20 liter" pattern="^[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,20}$" size= "15" required/>  </td>
+    </tr>
+     <tr>  
+        <td> <label>Adres e-mail:</label> </td> 
+        <td> <input type="text" name="email" id="email" title="Podaj email w formacie xxx@xx.xx" pattern="^[a-zA-Z0-9_]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$" size= "15" required/> <br /> </td>
+    </tr>
+    <tr>    
+        <td> 
+            <label>Temat:</label> </td>
+        <td>
+             <select name="temat" id="temat">
+             <option value="reklamacja" >
+             Reklamacja </option>
+             <option value="praca" >
+             Praca </option>
+             </select> <br/>
+        </td>
+    </tr>
+   
+           
+  </tbody>
+</table>
+
+              Wiadomość: <br/>
+<textarea name="tekst" id="tekst" cols="32" rows="7" required ></textarea>
+<br/><br/>
+
+
+<input type="submit" name="wyslij" value="Wyślij" />
+<input type="reset" value="Anuluj" />
+	
+</form> <br/>
+              
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 ">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ES 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

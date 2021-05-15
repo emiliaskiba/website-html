@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+   <script src="funkcje.js"></script> 
+   
+ <!-- lightbox -->
+   <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link href="css/lightbox.css" rel="stylesheet" />
+   <script src="lightbox.js"></script>
+   
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+  <title>Amai Pots</title>
+
+
+
+</head>
+
+<body>
+
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container">
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Strona główna
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">O firmie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="koszyk.html">Koszyk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Kontener -->
+  <div class="container">
+
+    <div class="row">
+<!-- pasek "menu" z boku -->
+      <div class="col-lg-3">
+
+        <h1 class="my-4"><img class="card-img-top" src="pic/banner.jpg" alt="banner"></h1>
+        <div class="list-group">
+            <a href="index.html" class="list-group-item">Wszystkie produkty</a>
+          <a href="misiowe.html" class="list-group-item">Kolekcja "Misiowe"</a>
+          
+          <a href="wyp.html" class="list-group-item">Wyprzedaż</a>
+          
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-9">
+<!-- karuzela -->
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <a href="misiowe.html"><img class="d-block img-fluid" src="pic/banner1.jpg" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="wyp.html"><img class="d-block img-fluid" src="pic/banner2.jpg" alt="Second slide"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+<!-- produkty -->
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt1.jpg"  data-lightbox="Produkt 1" data-title="Misiowe doniczki" ><img class="card-img-top" src="pic/miniatura/produkt1.jpg" alt="produkt1"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="" >Misiowe Doniczki</a>
+                </h4>
+                <h5>25,90 PLN</h5>
+                <p class="card-text">Najnowsza kolekcja "Misiowe". Idealne do nadania kwiatom charakteru.</p>
+              </div>
+              <div class="card-footer">
+              <input type="button" onclick="zapisz('misiowe doniczki',25.90)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt2.jpg"  data-lightbox="Produkt 2" data-title="Misiowe pojemniki" ><img class="card-img-top" src="pic/miniatura/produkt2.jpg" alt="produkt2"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="" >Misiowe pojemniki</a>
+                </h4>
+                <h5>32,90 PLN</h5>
+                <p class="card-text">Najnowsza kolekcja "Misiowe". Idealne do przechowywania.</p>
+              </div>
+              <div class="card-footer">
+               <input type="button" onclick="zapisz('misiowe pojemniki',32.90)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt3.jpg"  data-lightbox="Produkt 3" data-title="Misiowe kubki" ><img class="card-img-top" src="pic/miniatura/produkt3.jpg" alt="produkt3"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="">Misiowe kubki</a>
+                </h4>
+                <h5>15,90 PLN</h5>
+                <p class="card-text">Najnowsza kolekcja "Misiowe". Idealne do gorących napojów.</p>
+              </div>
+              <div class="card-footer">
+              <input type="button" onclick="zapisz('misiowe kubki',15.90)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt4.jpg"  data-lightbox="Produkt 4" data-title="Małe doniczki" ><img class="card-img-top" src="pic/miniatura/produkt4.jpg" alt="produkt4"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="">Małe Doniczki </a>
+                </h4>
+                <h5>10,90 PLN</h5>
+                <p class="card-text">Małe doniczki, idealnie pasują do mniejszych roślin, np kaktusów.</p>
+              </div>
+              <div class="card-footer">
+             
+               <input type="button" onclick="zapisz('male doniczki', 10.90)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt5.jpg"  data-lightbox="Produkt 5" data-title="Miseczka słonik" ><img class="card-img-top" src="pic/miniatura/produkt5.jpg" alt="produkt5"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="">Miseczka Słonik</a>
+                </h4>
+                  <h5> 24,90 PLN</h5>
+                <p class="card-text">Ostatni dostępny produkt z kolekcji "Słoniki".</p>
+              </div>
+              <div class="card-footer">
+             <input type="button" onclick="zapisz('miska slonik', 24.9)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="pic/miniatura/produkt6.jpg"  data-lightbox="Produkt 6" data-title="Miseczka biała" ><img class="card-img-top" src="pic/miniatura/produkt6.jpg" alt="produkt6"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="pic/miniatura/produkt6.jpg">Miseczka Biała</a>
+                </h4>
+                <h5>15,90 PLN</h5>
+                <p class="card-text">Pierwszy produkt dostępny na Amai Pots, idealnie nada się jako prezent.</p>
+              </div>
+              <div class="card-footer">
+               <input type="button" onclick="zapisz('miska biala', 15.90)" value="Dodaj do koszyka" >
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Stopka -->
+  <footer class="py-5 ">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ES 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
