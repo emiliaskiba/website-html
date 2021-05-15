@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+nav {
+    
+     background-color: #007bff;
+}
+footer{
+     background-color:  #007bff;
+}
+
+#przyciski
+{
+    text-align:  center;
+}
+.przyciskKoszyk
+{
+    background-color: #007bff;
+    width: 170px;
+}
+#table,th,td
+{
+    border: 1pt solid black;
+  text-align:  center;
+}
